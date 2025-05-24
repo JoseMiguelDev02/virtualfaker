@@ -82,6 +82,9 @@
 			</plugin>
 
 		</plugins>
+
+		<finalName>virtualfaker</finalName>
+
 	</build>
 
 </project>

@@ -108,3 +108,15 @@ jobs:
           name: artifact
           #From this path
           path: target/virtualfaker-0.0.1-SNAPSHOT.jar
+
+      - name: Build & push Docker image
+        uses: mr-smithers-excellent/docker-build-push@v6
+        with:
+          image: josemigueldev/virtualfaker
+          tags: latest
+          registry: docker.io
+          ockerfile: Dockerfile
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+
