@@ -115,8 +115,8 @@ jobs:
           image: josemigueldev/virtualfaker
           tags: latest
           registry: docker.io
-          ockerfile: Dockerfile
+          dockerfile: Dockerfile
           username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
+          password: ${{ secrets.DOCKER_PASSWORD}}
 
 
